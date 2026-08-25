@@ -1,4 +1,4 @@
-# Terraform state — NEVER commit state files
+# Terraform state - NEVER commit state files
 **/*.tfstate
 **/*.tfstate.*
 **/.terraform/
@@ -26,6 +26,9 @@ override.tf.json
 # Terraform CLI config
 .terraformrc
 terraform.rc
+
+# Terraform lock info
+.terraform.tfstate.lock.info
 
 # OS files
 .DS_Store
