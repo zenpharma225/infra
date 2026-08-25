@@ -21,7 +21,7 @@ provider "aws" {
   }
 }
 
-/*provider "kubernetes" {
+provider "kubernetes" {
   host                   = module.eks.cluster_endpoint
   cluster_ca_certificate = base64decode(module.eks.cluster_certificate_authority_data)
 
@@ -30,4 +30,4 @@ provider "aws" {
     command     = "aws"
     args        = ["eks", "get-token", "--cluster-name", module.eks.cluster_name]
   }
-}*/
+}
